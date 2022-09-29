@@ -1,0 +1,26 @@
+{
+  "contracts": {
+    "NonFungibleToken": "./contracts/NonFungibleToken.cdc",
+    "AirDropCenter": "./contracts/AirDropCenter.cdc"
+  },
+  "networks": {
+    "emulator": "127.0.0.1:3569",
+    "mainnet": "access.mainnet.nodes.onflow.org:9000",
+    "testnet": "access.devnet.nodes.onflow.org:9000"
+  },
+  "accounts": {
+    "emulator-account": {
+      "address": "f8d6e0586b0a20c7",
+      "key": "f62021bac4734af944c83dabb4722d876dab513bc3b12bf6628b41ff3e1fd081"
+    },
+    "proposer": {
+      "address": "0x01cf0e2f2f715450",
+      "key": "9b3b4871211c43c352adb8bc87db6357d8cef310035897fa068181119600e1c8"
+    }
+  },
+  "deployments": {
+    "emulator": {
+      "emulator-account": ["NonFungibleToken", "AirDropCenter"]
+    }
+  }
+}
